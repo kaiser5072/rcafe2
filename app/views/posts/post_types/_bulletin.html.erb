@@ -21,3 +21,5 @@
   <% end %>
   </tbody>
 </table>
+
+<%= link_to 'New Post', (@bulletin.present? ? new_bulletin_post_path(@bulletin) : new_post_path), class: 'btn btn-default' %>
